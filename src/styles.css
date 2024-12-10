@@ -1,0 +1,193 @@
+/* General body styles */
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Make sure content is aligned to the top */
+  align-items: stretch; /* Ensure content takes full width */
+  min-height: 100vh;
+  width: 100%; /* Ensure the body takes full width */
+  scroll-behavior: smooth;
+}
+
+/* Main container for all sections */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 80px; /* Adjust this based on your navbar height */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  border: #ffffff;
+  padding: 10px 0;
+  width: 100%; /* Ensure it takes full width */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Pin it to the top */
+  left: 0; /* Align it to the left */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  margin-bottom: 20px; /* Add margin-bottom to prevent overlapping with content */
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Blog heading section */
+.blog-heading {
+  margin-bottom: 40px;
+  border: 5px solid white;
+  background-color: rgb(0, 0, 0);
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+.blog-heading h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Lora', serif;
+  font-size: 300%;
+}
+
+/* Posts section */
+.posts {
+  border: 5px solid white;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  width: 100%; /* Full width */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Post list styling */
+li {
+  border: 2px solid rgb(255, 230, 0);
+  background-color: #1c1c1c;
+  width: 100%; /* Full width */
+  padding: 20px; /* Increased padding */
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.4rem;
+  box-sizing: border-box; /* Ensures padding and borders are inside the width */
+}
+
+li:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+li strong {
+  color: #d0ff00;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+li + li {
+  margin-top: 15px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .blog-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Post Detail Styles */
+.post-detail {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+  width: 100%; /* Full width */
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.post-detail h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.post-detail p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.post-detail div {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
