@@ -1,8 +1,8 @@
 {
-  "name": "blogproj1",
+  "name": "blogproj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vihanvt.github.io/blogproj1",
+  "homepage": "https://vihanvt.github.io/blogproj/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^18.0.0",
