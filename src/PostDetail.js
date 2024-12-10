@@ -9,7 +9,7 @@ const PostDetail = () => {
   useEffect(() => {
     // Simulating fetching data based on postId
     const fetchedPost = {
-      1: { id: 1, title: 'First Post', content: 'This is the content of the first post.', date: 'January 1, 2024' },
+      1: { id: 1, title: 'First Post', content: 'This is the content of the first post.I DONT FUCKING KNOW WHAT TO DO', date: 'January 1, 2024' },
       2: { id: 2, title: 'Second Post', content: 'This is the content of the second post.', date: 'February 2, 2024' },
       3: { id: 3, title: 'Third Post', content: 'This is the content of the third post.', date: 'March 3, 2024' }
     };
